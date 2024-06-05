@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #8758ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App {
+  text-align: center;
+}
+
+h1 {
+  color: #fff;
+  margin-bottom: 0.5rem;
+  font-size: 1.75rem;
+}
+
+.TodoWrapper {
+  background: #1A1A40;
+  margin-top: 5rem;
+  padding: 2rem;
+  border-radius: 5px;
+}
+
+.TodoForm {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.todo-input {
+  outline: none;
+  background: none;
+  border: 1px solid #8758ff;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  margin-left:1rem;
+  width: 300px;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.todo-input::placeholder {
+  color: #ffffff4d;
+}
+
+.todo-btn {
+  background: #8758ff;
+  color: #fff;
+  border: none;
+  padding: 0.55rem;
+  cursor: pointer;
+  margin-left:1rem;
+  border-radius: 5px;
+}
+
+.Todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #8758ff;
+  color: #fff;
+  padding: 0.75rem 1rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.fa-trash {
+  margin-left: 0.75rem;
+}
+
+.incompleted {
+  color: #fff;
+  cursor: pointer;
+}
+
+.completed {
+  color: #c5aeff;
+  text-decoration: line-through;
+  cursor: pointer;
+}
+
+.edit-icon,
+.delete-icon {
+  cursor: pointer;
+}
+ 
+
+
+.Todo .toggle-square.completed {
+  cursor: default; /* Prevent toggle-square from being clickable for completed tasks */
+}
+
+
+.incompleted {
+  opacity: 1; /* Default opacity */
+}
+
+/* Add this to your CSS file */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background-color: rgb(27, 247, 162);
+  padding: 40px; /* Increase padding for more space around content */
+  border-radius: 8px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+  width: 60%; /* Set desired width */
+  max-width: 800px; /* Optional: Set maximum width */
+  height:60%;
+}
+
+.modal-content {
+  color:black;
+}
+
+.close {
+  position: absolute;
+  top: 18%;
+  right: 29%;
+  cursor: pointer;
+  font-size: 50px;
+}
+/* .close:hover {
+  opacity: 0.5;
+} */
+
+.modal-description {
+  margin-top: 10%;
+  text-align: left;
+}
+
+.text-description {
+  margin-top: 1%;
+  text-align: left;
+}
+
+.modal-status {
+  margin-top: 40%;
+  text-align: left;
+}
+
+.text-status {
+  margin-top: 1%;
+  text-align: left;
+}
+
+.modal-task-create-date {
+  position: absolute;
+  left:62%;
+  top:74%;
+}
+
+.created-date {
+  position: absolute;
+  left:62%;
+  top:76%;
+}
+.fa-list{
+  margin-left:0.75rem;
+  font-size:1.1rem;
+}
